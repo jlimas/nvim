@@ -1,4 +1,7 @@
-local wk = require('which-key')
+local whichkey_ok, wk = pcall(require, "which-key")
+if not whichkey_ok then
+    return
+end
 
 wk.register({
     p = {

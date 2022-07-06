@@ -1,7 +1,10 @@
-local notify = require 'notify'
+local status_ok, lsp_installer = pcall(require, "nvim-lsp-installer")
+if not status_ok then
+  return
+end
 
 -- Install the LSP Servers
-require('nvim-lsp-installer').setup({
+lsp_installer.setup({
   ensure_installed = { 'tsserver', 'jsonls', 'pyright', 'html', 'sumneko_lua' },
   automatic_installation = false,
   ui = {
@@ -25,7 +28,7 @@ vim.keymap.set('n', ',q', vim.diagnostic.setloclist, opts)
 -- after the language server attaches to the current buffer
 -- client, bufnr
 local on_attach = function(client, bufnr)
-  notify('Buffer attached to LSP Server: ' .. client.name, 'success', {
+  require('notify')('Buffer attached to LSP Server: ' .. client.name, 'success', {
     title = 'LSP Information'
   })
 
