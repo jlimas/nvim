@@ -2,6 +2,7 @@ require 'packer_setup'
 require 'core.options'
 require 'core.colors'
 require 'core.keymappings'
+require 'core.autocmd'
 
 require 'lsp-config'
 require 'lsp-config.nvim-cmp'
