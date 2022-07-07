@@ -9,3 +9,6 @@ vim.cmd([[
                         \  let &l:textwidth = line('.') == 1 ? 50 : 80
   augroup end
 ]])
+
+vim.cmd('autocmd FileType python setlocal colorcolumn=88')
+vim.cmd('autocmd FileType javascript,typescript setlocal colorcolumn=120')
