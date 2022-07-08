@@ -71,7 +71,7 @@ null_ls.setup({
   sources = {
     formatting.black,
     formatting.isort,
-    formatting.prettier,
+    formatting.prettierd
   }
 })
 
