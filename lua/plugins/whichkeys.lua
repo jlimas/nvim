@@ -1,4 +1,4 @@
-local whichkey_ok, wk = pcall(require, "which-key")
+local whichkey_ok, wk = pcall(require, 'which-key')
 if not whichkey_ok then
     return
 end
@@ -16,6 +16,7 @@ wk.register({
         p = { '<cmd>e ~/.config/nvim/lua/packer_setup.lua<cr>', 'Packer' },
         s = { '<cmd>e ~/.config/nvim/lua/core/options.lua<cr>', 'Settings' },
         m = { '<cmd>e ~/.config/nvim/lua/core/keymappings.lua<cr>', 'Mappings' },
+        a = { '<cmd>e ~/.config/nvim/lua/core/autocmd.lua<cr>', 'Auto Commands' },
         w = { '<cmd>e ~/.config/nvim/lua/plugins/whichkeys.lua<cr>', 'Which Keys' },
         l = { '<cmd>e ~/.config/nvim/lua/lsp-config/init.lua<cr>', 'LSP' },
     },
