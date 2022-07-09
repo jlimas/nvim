@@ -5,7 +5,7 @@ end
 
 -- Install the LSP Servers
 lsp_installer.setup({
-  ensure_installed = { 'tsserver', 'jsonls', 'pyright', 'html', 'sumneko_lua' },
+  ensure_installed = { 'tsserver', 'tailwindcss', 'pyright', 'html', 'sumneko_lua' },
   automatic_installation = false,
   ui = {
     icons = {
@@ -85,9 +85,20 @@ require 'lspconfig'.tsserver.setup {
   capabilities = capabilities,
 }
 
+require 'lspconfig'.tailwindcss.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  init_options = {
+    userLanguages = {
+      htmldjango = 'html'
+    }
+  }
+}
+
 require 'lspconfig'.html.setup {
   on_attach = on_attach,
   capabilities = capabilities,
+  filetypes = { 'html', 'htmldjango' },
   init_options = {
     provideFormatter = false
   }
