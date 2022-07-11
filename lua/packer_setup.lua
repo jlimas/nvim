@@ -69,6 +69,7 @@ return packer.startup(function(use)
   use 'lewis6991/gitsigns.nvim'
   use 'numToStr/Comment.nvim'
   use 'arkav/lualine-lsp-progress'
+  use 'nvim-orgmode/orgmode'
 
   use { 'startup-nvim/startup.nvim', requires = { 'nvim-telescope/telescope.nvim', 'nvim-lua/plenary.nvim' } }
   use { 'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true } }

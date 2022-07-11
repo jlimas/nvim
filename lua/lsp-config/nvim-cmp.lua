@@ -1,16 +1,16 @@
-local cmp_status_ok, cmp = pcall(require, "cmp")
+local cmp_status_ok, cmp = pcall(require, 'cmp')
 if not cmp_status_ok then
-	return
+  return
 end
 
-local snip_status_ok, luasnip = pcall(require, "luasnip")
+local snip_status_ok, luasnip = pcall(require, 'luasnip')
 if not snip_status_ok then
-	return
+  return
 end
 
-local lspkind_status_ok, lspkind = pcall(require, "lspkind")
+local lspkind_status_ok, lspkind = pcall(require, 'lspkind')
 if not lspkind_status_ok then
-	return
+  return
 end
 
 cmp.setup {
@@ -49,6 +49,7 @@ cmp.setup {
   sources = {
     { name = 'nvim_lsp' },
     { name = 'luasnip' },
+    { name = 'orgmode' }
   },
   formatting = {
     format = lspkind.cmp_format({
@@ -57,10 +58,9 @@ cmp.setup {
 
       -- The function below will be called before any actual modifications from lspkind
       -- so that you can provide more controls on popup customization. (See [#30](https://github.com/onsails/lspkind-nvim/pull/30))
-      before = function (entry, vim_item)
+      before = function(entry, vim_item)
         return vim_item
       end
     })
   }
 }
-
