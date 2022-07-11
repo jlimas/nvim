@@ -43,6 +43,7 @@ return packer.startup(function(use)
   use 'folke/which-key.nvim'
   use 'sheerun/vim-polyglot'
   use 'easymotion/vim-easymotion'
+  use 'RRethy/vim-illuminate'
 
   -- Themes
   use 'EdenEast/nightfox.nvim'
