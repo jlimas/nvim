@@ -47,3 +47,6 @@ keymap('n', 't', '<plug>(easymotion-t2)', opts)
 -- Stay in indent mode
 keymap('v', '<', '<gv', opts)
 keymap('v', '>', '>gv', opts)
+
+-- Git
+keymap('n', '<leader>gg', '<cmd>lua _LAZYGIT_TOGGLE()<CR>', opts)

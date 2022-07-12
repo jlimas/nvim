@@ -44,6 +44,7 @@ return packer.startup(function(use)
   use 'sheerun/vim-polyglot'
   use 'easymotion/vim-easymotion'
   use 'RRethy/vim-illuminate'
+  use 'akinsho/toggleterm.nvim'
 
   -- Themes
   use 'EdenEast/nightfox.nvim'

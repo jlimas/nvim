@@ -20,6 +20,7 @@ require 'plugins.copilot'
 require 'plugins.floatterm'
 require 'plugins.coverage'
 require 'plugins.vim-test'
+require 'plugins.toggleterm'
 
 -- Disabled until it's stable
 -- require 'plugins.orgmode'
