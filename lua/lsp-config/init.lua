@@ -95,10 +95,10 @@ local on_attach = function(client, bufnr)
     end
   end
 
-  vim.api.nvim_create_autocmd({ 'BufWritePre' }, {
-    pattern = { '*' },
-    callback = vim.lsp.buf.formatting_sync,
-  })
+  -- vim.api.nvim_create_autocmd({ 'BufWritePre' }, {
+  --   pattern = { '*' },
+  --   callback = vim.lsp.buf.formatting_sync,
+  -- })
 end
 
 -- Add additional capabilities supported by nvim-cmp
