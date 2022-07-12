@@ -7,6 +7,7 @@ require 'core.autocmd'
 require 'lsp-config'
 require 'lsp-config.nvim-cmp'
 
+require 'plugins.alpha'
 require 'plugins.whichkeys'
 require 'plugins.bufferline'
 require 'plugins.trouble'

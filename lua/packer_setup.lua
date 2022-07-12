@@ -58,6 +58,7 @@ return packer.startup(function(use)
   use 'saadparwaiz1/cmp_luasnip'
   use 'L3MON4D3/LuaSnip'
   use 'onsails/lspkind.nvim'
+  use 'goolord/alpha-nvim'
 
   use 'vim-test/vim-test'
   use 'voldikss/vim-floaterm'
