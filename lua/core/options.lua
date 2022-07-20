@@ -23,3 +23,4 @@ set.cursorline = true
 set.clipboard = 'unnamedplus'
 set.hidden = true
 set.timeoutlen = 500
+set.mouse = "a"
