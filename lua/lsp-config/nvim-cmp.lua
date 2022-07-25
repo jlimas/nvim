@@ -50,7 +50,8 @@ cmp.setup {
     { name = 'nvim_lsp' },
     { name = 'luasnip' },
     { name = 'orgmode' },
-    { name = 'path' }
+    { name = 'path' },
+    { name = 'buffer' }
   },
   formatting = {
     format = lspkind.cmp_format({
