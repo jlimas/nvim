@@ -46,6 +46,7 @@ return packer.startup(function(use)
   use 'RRethy/vim-illuminate'
   use 'akinsho/toggleterm.nvim'
   use 'johann2357/nvim-smartbufs'
+  use 'pantharshit00/vim-prisma'
 
   -- Themes
   use 'EdenEast/nightfox.nvim'
