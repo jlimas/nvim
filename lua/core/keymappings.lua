@@ -19,9 +19,9 @@ keymap('v', 'p', '"_dP', opts)
 
 -- Window navigation
 keymap('n', '<leader>w', '<cmd>w<cr>', opts)
-keymap('n', '<leader>q', '<cmd>q<cr>', opts)
-keymap('n', '<leader>x', '<cmd>q!<cr>', opts)
-keymap('n', '<leader>c', '<cmd>bd<cr>', opts)
+keymap('n', '<leader>q', '<cmd>q!<cr>', opts)
+keymap('n', '<leader>c', '<cmd>lua require("nvim-smartbufs").close_current_buffer()<CR>', opts)
+keymap('n', '<leader>x', '<cmd>qall!<cr>', opts)
 
 -- Splits
 keymap('n', '<S-Right>', '<cmd>vs<cr>', opts)
@@ -50,3 +50,4 @@ keymap('v', '>', '>gv', opts)
 
 -- Git
 keymap('n', '<leader>gg', '<cmd>lua _LAZYGIT_TOGGLE()<CR>', opts)
+

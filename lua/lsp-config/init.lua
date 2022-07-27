@@ -51,6 +51,7 @@ setupDiagnostics()
 -- Install the LSP Servers
 lsp_installer.setup({
   ensure_installed = { 'tsserver', 'tailwindcss', 'pyright', 'html', 'sumneko_lua' },
+  ensure_installed = { 'tsserver', 'tailwindcss', 'pyright', 'html', 'sumneko_lua', 'prismals' },
   automatic_installation = false,
   ui = {
     icons = {
@@ -116,6 +117,11 @@ null_ls.setup({
     formatting.prettierd
   }
 })
+
+require 'lspconfig'.prismals.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
 
 require 'lspconfig'.pyright.setup {
   on_attach = on_attach,
